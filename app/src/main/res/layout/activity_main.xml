@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B35F717A"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="@drawable/line"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <Button
+            android:id="@+id/btnCP"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="0dp"
+            android:background="@mipmap/ic_launcher" />
+
+        <Spinner
+            android:id="@+id/processSpinner"
+            android:layout_width="258dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/line"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <Button
+            android:id="@+id/btnFindHook"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="查看被hook地址"/>
+        <Button
+            android:id="@+id/btnDump"
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Dump"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/addrList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
